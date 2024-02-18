@@ -368,7 +368,7 @@ function calculateHealthFactor(uint256 totalDscMinted, uint256 collateralValueIn
         (totalDscMinted, collateralValueUsd) = _getAccountInformation(user);
     }
 
-    function getCollateralBalanceOfUser(address user, address toke) public view returns(uint256) {
+    function getCollateralBalanceOfUser(address user, address token) public view returns(uint256) {
         return s_collateralDeposited[user][token];
     } 
     function getPrecision() external pure returns(uint256) {
